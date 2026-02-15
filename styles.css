@@ -328,8 +328,9 @@ body.dark-mode .stat {
 }
 
 body.dark-mode .stat h3 {
-    -webkit-text-fill-color: transparent;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #87ceeb;
+    background: none;
+    -webkit-text-fill-color: unset;
 }
 
 .stat p {
