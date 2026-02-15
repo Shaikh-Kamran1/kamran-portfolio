@@ -456,6 +456,9 @@ section {
 .education {
     background: white;
 }
+body.dark-mode .education {
+    background: var(--bg-white);
+}
 
 .education-card {
     background: var(--bg-light);
