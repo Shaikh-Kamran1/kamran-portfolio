@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamran Shaikh - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: white;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .title {
+            font-size: 16px;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            font-size: 13px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .section {
+            margin-bottom: 28px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #2c3e50;
+            padding: 10px 15px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .professional-summary {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            line-height: 1.8;
+            font-size: 13px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .skill-category {
+            margin-bottom: 15px;
+        }
+
+        .skill-category-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background-color: #ecf0f1;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            color: #2c3e50;
+            border: 1px solid #bdc3c7;
+        }
+
+        .project-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        .project-item:last-child {
+            border-bottom: none;
+        }
+
+        .project-title {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .project-description {
+            color: #555;
+            font-size: 13px;
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .tech-badge {
+            background-color: #3498db;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+
+        .education-item {
+            margin-bottom: 15px;
+        }
+
+        .education-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .degree {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+
+        .university {
+            color: #555;
+            font-size: 13px;
+            margin-bottom: 2px;
+        }
+
+        .cgpa {
+            color: #7f8c8d;
+            font-size: 13px;
+        }
+
+        .highlight {
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="name">KAMRAN SHAIKH</div>
+            <div class="title">Full Stack Developer | Java & React Enthusiast</div>
+            <div class="contact-info">
+                <span>📱 +91-7020882765</span>
+                <span>📧 shaikhmohdkamran1@gmail.com</span>
+                <span>📍 Maharashtra, India</span>
+                <span>🔗 LinkedIn | GitHub</span>
+            </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <div class="section">
+            <div class="section-title">Professional Summary</div>
+            <div class="professional-summary">
+                Computer Engineer and Java Full-Stack Developer fresher with a passion for building intuitive and responsive web applications. Strong understanding of both frontend and backend technologies with demonstrated expertise in multiple frameworks. Quick learner with proven ability to deliver quality projects in team-based environments.
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="section">
+            <div class="section-title">Technical Skills</div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-title">Backend Development</div>
+                    <div class="skills-list">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title">Frontend Development</div>
+                    <div class="skills-list">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Vite</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title">Database & Backend</div>
+                    <div class="skills-list">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">OOP Concepts</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title">Analytics & Tools</div>
+                    <div class="skills-list">
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Git/GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="section">
+            <div class="section-title">Featured Projects (6 Completed)</div>
+
+            <div class="project-item">
+                <div class="project-title">1. Smart Task Manager</div>
+                <div class="project-description">Full-stack task management application with user authentication, task filtering, and comprehensive CRUD operations. Enables users to manage and organize their daily tasks efficiently.</div>
+                <div class="project-tech">
+                    <span class="tech-badge">Java</span>
+                    <span class="tech-badge">Spring Boot</span>
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">REST API</span>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">2. HiRect - Job Portal</div>
+                <div class="project-description">Comprehensive job portal enabling recruiters to post job listings and candidates to browse, filter, and apply with real-time updates. Features application tracking and recruiter dashboard.</div>
+                <div class="project-tech">
+                    <span class="tech-badge">Java</span>
+                    <span class="tech-badge">Spring Boot</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">REST API</span>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">3. Mist Mountain Forest Gate - Resort Website</div>
+                <div class="project-description">Professional nature resort website featuring multi-page design, WhatsApp booking integration, SEO optimization, and fully responsive layout. Built with modern web technologies and best practices.</div>
+                <div class="project-tech">
+                    <span class="tech-badge">HTML</span>
+                    <span class="tech-badge">Tailwind CSS</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">Responsive Design</span>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">4. Globus Clinic - Medical Website</div>
+                <div class="project-description">Professional medical clinic website showcasing services, doctor qualifications, and online consultation booking. Features fully responsive design and modern UI/UX.</div>
+                <div class="project-tech">
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">Vite</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">Responsive Design</span>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">5. AusHotel - Restaurant Management System</div>
+                <div class="project-description">Comprehensive restaurant and hotel management system with 3 modules: Customer App, Owner Admin Portal, and Kitchen Panel. Features real-time updates and Firebase backend integration.</div>
+                <div class="project-tech">
+                    <span class="tech-badge">Flutter</span>
+                    <span class="tech-badge">Dart</span>
+                    <span class="tech-badge">Firebase</span>
+                    <span class="tech-badge">Multi-module Architecture</span>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">6. Flipkart Mobile Analytics</div>
+                <div class="project-description">Data analytics portfolio project analyzing 916+ mobile phones with comprehensive pricing, ratings, and discount analysis. Implements ML predictions and market analysis using Python.</div>
+                <div class="project-tech">
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">Pandas</span>
+                    <span class="tech-badge">Scikit-learn</span>
+                    <span class="tech-badge">Tableau</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <div class="section-title">Education</div>
+            <div class="education-item">
+                <div class="degree">Bachelor of Engineering (B.E) - Computer Engineering</div>
+                <div class="university">KBC NMU (Kavayitri Bahinabai Chaudhari North Maharashtra University), Maharashtra</div>
+                <div class="cgpa"><span class="highlight">CGPA: 8.2 / 10</span></div>
+            </div>
+        </div>
+
+        <!-- Core Competencies -->
+        <div class="section">
+            <div class="section-title">Core Competencies</div>
+            <div class="skills-grid" style="grid-template-columns: 1fr;">
+                <div class="skills-list">
+                    <span class="skill-tag">Full-Stack Development</span>
+                    <span class="skill-tag">REST API Design</span>
+                    <span class="skill-tag">Database Design</span>
+                    <span class="skill-tag">Responsive Web Design</span>
+                    <span class="skill-tag">Mobile App Development</span>
+                    <span class="skill-tag">Data Analysis</span>
+                    <span class="skill-tag">Problem Solving</span>
+                    <span class="skill-tag">Team Collaboration</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Auto-print to PDF on load (optional)
+        // window.onload = function() {
+        //     window.print();
+        // };
+    </script>
+</body>
+</html>

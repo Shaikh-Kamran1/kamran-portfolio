@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamran Shaikh - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            font-family: 'Lora', serif;
+            line-height: 1.4;
+            color: #000;
+            background: #f5f5f5;
+            padding: 0.5in;
+            font-size: 10pt;
+        }
+
+        .resume {
+            background: white;
+            width: 8.5in;
+            height: 11in;
+            margin: 0 auto;
+            padding: 0.75in;
+            box-shadow: 0 0 0.2in rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            margin-bottom: 0.15in;
+            border-bottom: 1pt solid #000;
+            padding-bottom: 0.1in;
+        }
+
+        .name {
+            font-size: 16pt;
+            font-weight: 700;
+            letter-spacing: 0.05in;
+            margin-bottom: 2pt;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .title {
+            font-size: 10pt;
+            margin-bottom: 4pt;
+            font-weight: 600;
+            letter-spacing: 0.02in;
+        }
+
+        .contact-info {
+            font-size: 8.5pt;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.15in;
+            line-height: 1.2;
+        }
+
+        .contact-info span {
+            display: inline-block;
+        }
+
+        .contact-info a {
+            color: #000;
+            text-decoration: none;
+            border-bottom: 0.5pt solid #000;
+        }
+
+        .contact-info a:hover {
+            background-color: #f0f0f0;
+        }
+
+        .divider {
+            margin: 0 5pt;
+            color: #000;
+        }
+
+        /* Section Styling */
+        .section {
+            margin-bottom: 0.12in;
+        }
+
+        .section-title {
+            font-size: 11pt;
+            font-weight: 700;
+            font-family: 'Source Sans Pro', sans-serif;
+            border-bottom: 1pt solid #000;
+            padding-bottom: 2pt;
+            margin-bottom: 6pt;
+            text-transform: uppercase;
+            letter-spacing: 0.03in;
+        }
+
+        /* Summary */
+        .summary {
+            font-size: 9pt;
+            line-height: 1.35;
+            margin-bottom: 0.08in;
+            text-align: justify;
+        }
+
+        /* Skills Section */
+        .skills-section {
+            display: flex;
+            flex-direction: column;
+            gap: 0.06in;
+        }
+
+        .skill-category {
+            display: flex;
+            font-size: 9pt;
+        }
+
+        .skill-category-name {
+            font-weight: 600;
+            min-width: 1.2in;
+            padding-right: 0.1in;
+        }
+
+        .skill-category-content {
+            flex: 1;
+        }
+
+        /* Projects */
+        .project {
+            margin-bottom: 0.1in;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1pt;
+        }
+
+        .project-title {
+            font-weight: 700;
+            font-size: 9.5pt;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .project-description {
+            font-size: 8.5pt;
+            line-height: 1.35;
+            margin-bottom: 3pt;
+            text-align: justify;
+        }
+
+        .project-tech {
+            font-size: 8pt;
+            color: #333;
+            font-style: italic;
+        }
+
+        .project-links {
+            font-size: 8pt;
+            margin-top: 2pt;
+        }
+
+        .project-links a {
+            color: #000;
+            text-decoration: none;
+            border-bottom: 0.5pt solid #000;
+            margin-right: 0.15in;
+        }
+
+        .project-links a:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Education */
+        .edu-item {
+            margin-bottom: 0.08in;
+        }
+
+        .degree {
+            font-weight: 700;
+            font-size: 9.5pt;
+            margin-bottom: 1pt;
+        }
+
+        .university {
+            font-size: 9pt;
+            margin-bottom: 1pt;
+        }
+
+        .cgpa {
+            font-size: 9pt;
+        }
+
+        .cgpa-highlight {
+            font-weight: 600;
+        }
+
+        /* Compact list */
+        .compact-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.1in;
+            font-size: 8.5pt;
+        }
+
+        .list-item {
+            display: inline;
+        }
+
+        .list-item::after {
+            content: " •";
+            margin-left: 0.08in;
+        }
+
+        .list-item:last-child::after {
+            content: "";
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+                background: white;
+            }
+
+            .resume {
+                box-shadow: none;
+                margin: 0;
+                padding: 0.75in;
+                width: 100%;
+                height: 100%;
+            }
+
+            @page {
+                margin: 0.5in;
+                size: letter;
+            }
+        }
+
+        /* Responsive for screen */
+        @media screen and (max-width: 900px) {
+            .resume {
+                width: 100%;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <!-- Header -->
+        <div class="header">
+            <div class="name">KAMRAN SHAIKH</div>
+            <div class="title">Full Stack Developer</div>
+            <div class="contact-info">
+                <span>+91-7020882765</span>
+                <span class="divider">|</span>
+                <span>shaikhmohdkamran1@gmail.com</span>
+                <span class="divider">|</span>
+                <a href="https://www.linkedin.com/in/kamran-shaikh-/" target="_blank">LinkedIn</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/Shaikh-Kamran1" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <!-- Summary -->
+        <div class="section">
+            <div class="section-title">SUMMARY</div>
+            <div class="summary">
+                Computer Engineer and Full-Stack Developer with demonstrated expertise in Java, Spring Boot, React, and Flutter. Passionate about developing intuitive, responsive applications across web and mobile platforms. Strong foundation in database design, REST API architecture, and data analytics with proven ability to deliver quality solutions.
+            </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="section">
+            <div class="section-title">TECHNICAL SKILLS</div>
+            <div class="skills-section">
+                <div class="skill-category">
+                    <div class="skill-category-name">Backend:</div>
+                    <div class="skill-category-content">Java, Spring Boot, REST APIs, OOP Concepts</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-name">Frontend:</div>
+                    <div class="skill-category-content">React, Flutter, Dart, HTML, CSS, JavaScript, Vite, Tailwind CSS</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-name">Databases:</div>
+                    <div class="skill-category-content">MySQL, Firebase, SQL</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-name">Tools & Version Control:</div>
+                    <div class="skill-category-content">Git, GitHub</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="section">
+            <div class="section-title">PROFESSIONAL PROJECTS</div>
+
+            <div class="project">
+                <div class="project-title">1. Smart Task Manager</div>
+                <div class="project-description">Full-stack task management application featuring user authentication, advanced filtering, and CRUD operations for efficient task organization.</div>
+                <div class="project-tech"><em>Java, Spring Boot, React, REST API</em></div>
+                <div class="project-links">
+                    <a href="https://github.com/Shaikh-Kamran1" target="_blank">View Project</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-title">2. HiRect — Job Portal</div>
+                <div class="project-description">Comprehensive job platform enabling recruiters to manage listings and candidates to apply with real-time updates and application tracking.</div>
+                <div class="project-tech"><em>Java, Spring Boot, MySQL, REST API</em></div>
+                <div class="project-links">
+                    <a href="https://github.com/Shaikh-Kamran1/hirect" target="_blank">View Project</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-title">3. Mist Mountain Forest Gate — Resort Website</div>
+                <div class="project-description">Professional nature resort website with multi-page architecture, WhatsApp booking integration, and SEO optimization.</div>
+                <div class="project-tech"><em>HTML, Tailwind CSS, JavaScript, Responsive Design</em></div>
+                <div class="project-links">
+                    <a href="https://mistmountain.vercel.app" target="_blank">Live Site</a> | <a href="https://github.com/Shaikh-Kamran1/mist-mountain-forest-gate" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-title">4. Globus Clinic — Medical Website</div>
+                <div class="project-description">Professional medical clinic website showcasing doctor qualifications, services, and online consultation booking system.</div>
+                <div class="project-tech"><em>React, Vite, CSS3</em></div>
+                <div class="project-links">
+                    <a href="https://globus-clinic.vercel.app" target="_blank">Live Site</a> | <a href="https://github.com/Shaikh-Kamran1/globus-clinic" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-title">5. AusHotel — Restaurant Management System</div>
+                <div class="project-description">Multi-module platform with Customer App, Owner Admin Portal, and Kitchen Panel featuring real-time updates and Firebase integration.</div>
+                <div class="project-tech"><em>Flutter, Dart, Firebase</em></div>
+                <div class="project-links">
+                    <a href="https://aushotel-app.firebaseapp.com/" target="_blank">Live App</a> | <a href="https://github.com/Shaikh-Kamran1/aushotel-flutter-app" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <div class="section-title">EDUCATION</div>
+            <div class="edu-item">
+                <div class="degree">Bachelor of Engineering — Computer Engineering</div>
+                <div class="university">KBC NMU, Maharashtra</div>
+                <div class="cgpa"><span class="cgpa-highlight">CGPA: 8.2/10</span></div>
+            </div>
+        </div>
+
+        <!-- Competencies -->
+        <div class="section">
+            <div class="section-title">CORE COMPETENCIES</div>
+            <div class="compact-list">
+                <div class="list-item">Full-Stack Development</div>
+                <div class="list-item">REST API Design</div>
+                <div class="list-item">Database Design</div>
+                <div class="list-item">Responsive Web Design</div>
+                <div class="list-item">Mobile Development</div>
+                <div class="list-item">Data Analysis</div>
+                <div class="list-item">Problem Solving</div>
+                <div class="list-item">Team Collaboration</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
